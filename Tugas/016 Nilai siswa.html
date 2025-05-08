@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("=".repeat(30));
+        console.log("PROGRAM MENENTUKAN NILAI UJIAN".padStart(25 + "PROGRAM MENENTUKAN NILAI UJIAN".length / 2));
+        console.log("=".repeat(30));
+
+        let nilai = parseFloat(prompt("Masukkan nilai anda ="));
+
+        if (nilai >= 90 && nilai <= 100) {
+            console.log("Nilai anda = A");
+        } else if (nilai >= 80 && nilai < 90) {
+            console.log("Nilai anda = B");
+        } else if (nilai >= 70 && nilai < 80) {
+            console.log("Nilai anda = C");
+        } else if (nilai <= 60) {
+            console.log("Nilai anda = E");
+        }
+
+        console.log("Belajarlah lebih giat lagi");
+    </script>
+</body>
+</html>

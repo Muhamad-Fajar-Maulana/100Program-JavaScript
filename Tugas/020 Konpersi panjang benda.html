@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input_m = parseFloat(prompt('Masukkan panjang benda dengan satuan meter ='));
+
+        const INCHI = 25.4 / 100;  // 1 inci = 2.54 cm, jadi 1 inci = 0.0254 meter
+        const KAKI = 30.48 / 100;  // 1 kaki = 30.48 cm, jadi 1 kaki = 0.3048 meter
+        const YARD = 0.9144;       // 1 yard = 0.9144 meter
+
+        // Konversi panjang ke satuan inci, kaki, yard
+        let inchi = input_m / INCHI;
+        input_m = input_m % INCHI;
+
+        let kaki = input_m / KAKI;
+        input_m = input_m % KAKI;
+
+        let yard = input_m / YARD;
+        input_m = input_m % YARD;
+
+        // Menampilkan hasil konversi
+        console.log(`Ini adalah konversi panjang benda:`);
+        console.log(`Inchi = ${inchi.toFixed(2)}`);
+        console.log(`Kaki = ${kaki.toFixed(2)}`);
+        console.log(`Yard = ${yard.toFixed(2)}`);
+        console.log(`Panjang yang tersisa dalam meter = ${input_m.toFixed(2)}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = parseInt(prompt('Masukkan bilangan bulat 1 = '));
+        let y = parseInt(prompt('Masukkan bilangan bulat 2 = '));
+        let z = parseInt(prompt('Masukkan bilangan bulat 3 = '));
+
+        if (x > y && x > z) {
+            console.log(`Ini adalah bilangan terbesar ${x}`);
+        } else if (y > x && y > z) {
+            console.log(`Ini adalah bilangan terbesar ${y}`);
+        } else if (z > x && z > y) {
+            console.log(`Ini adalah bilangan terbesar ${z}`);
+        } else {
+            console.log('Ada dua atau lebih bilangan yang sama terbesar');
+        }
+
+        if (x < y && x < z) {
+            console.log(`Ini adalah bilangan terkecil ${x}`);
+        } else if (y < x && y < z) {
+            console.log(`Ini adalah bilangan terkecil ${y}`);
+        } else if (z < x && z < y) {
+            console.log(`Ini adalah bilangan terkecil ${z}`);
+        } else {
+            console.log('Ada dua atau lebih bilangan yang sama terkecil');
+        }
+    </script>
+</body>
+</html>

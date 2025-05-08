@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("=".repeat(30));
+        console.log("PROGRAM MENGHITUNG WAKTU PROYEK");
+        console.log("=".repeat(30));
+
+        let hari_input = parseFloat(prompt("Masukkan waktu pengerjaan proyek (dalam hari):"));
+
+        const TAHUN = 365;
+        const BULAN = 30; // diasumsikan 1 bulan = 30 hari
+        const HARI = 1;
+
+        let tahun = Math.floor(hari_input / TAHUN);
+        hari_input = hari_input % TAHUN;
+
+        let bulan = Math.floor(hari_input / BULAN);
+        hari_input = hari_input % BULAN;
+
+        let hari = Math.floor(hari_input / HARI);
+
+        console.log(`Waktu pengerjaan proyek ini adalah:\nTahun = ${tahun}\nBulan = ${bulan}\nHari = ${hari}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input_nilai = parseFloat(prompt("Silahkan masukkan nilai Anda:"));
+
+        if (input_nilai >= 94) {
+            console.log("Anda lulus dengan predikat A");
+        } else if (input_nilai > 80 && input_nilai < 90) {
+            console.log("Anda lulus dengan predikat B");
+        } else if (input_nilai > 70 && input_nilai < 80) {
+            console.log("Anda lulus dengan predikat C");
+        } else {
+            console.log("Maaf Anda dinyatakan tidak lulus/silahkan coba lagi tahun depan :)");
+        }
+    </script>
+</body>
+</html>

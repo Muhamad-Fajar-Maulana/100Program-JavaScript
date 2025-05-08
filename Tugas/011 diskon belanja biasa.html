@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let total_harga = parseFloat(prompt("Masukkan total harga:"));
+        let diskon = 0;
+
+        if (total_harga >= 100) {
+            diskon = total_harga * 5 / 100;
+            console.log("Selamat anda mendapatkan diskon sebesar 5%");
+        } else {
+            console.log("Maaf anda tidak mendapatkan diskon");
+        }
+
+        console.log("Ini adalah diskon anda = " + diskon);
+        let total_diskon_harga = total_harga - diskon;
+        console.log("Ini adalah harga yang harus anda bayar = " + total_diskon_harga);
+    </script>
+</body>
+</html>

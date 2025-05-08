@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input_cm = parseInt(prompt("Masukkan jarak menggunakan cm:"));
+
+        const KM = 100000; // 1 kilometer = 100000 cm
+        const M = 100;     // 1 meter = 100 cm
+        const CM = 1;      // 1 cm = 1 cm
+
+        let input_km = Math.floor(input_cm / KM);
+        input_cm = input_cm % KM;
+
+        let input_m = Math.floor(input_cm / M);
+        input_cm = input_cm % M;
+
+        let input_cm_1 = input_cm; // Sisa akhirnya tetap dalam cm
+
+        console.log(`Jarak tempuh anda adalah\nKilometer = ${input_km}\nMeter = ${input_m}\nCentimeter = ${input_cm_1}`);
+    </script>
+</body>
+</html>

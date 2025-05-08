@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input_user = prompt('Silahkan pilih operator (+, -, %, /, x, **)');
+        let angka_1 = parseFloat(prompt('Masukkan angka 1 = '));
+        let angka_2 = parseFloat(prompt('Masukkan angka 2 = '));
+
+        let hasil;
+
+        if (input_user === "+") {
+            hasil = angka_1 + angka_2;
+            console.log(`Hasilnya adalah ${hasil}`);
+        } else if (input_user === "-") {
+            hasil = angka_1 - angka_2;
+            console.log(`Hasilnya adalah ${hasil}`);
+        } else if (input_user === "%") {
+            hasil = angka_1 % angka_2;
+            console.log(`Hasilnya adalah ${hasil}`);
+        } else if (input_user === "/") {
+            hasil = angka_1 / angka_2;
+            console.log(`Hasilnya adalah ${hasil}`);
+        } else if (input_user === "*") {
+            hasil = angka_1 * angka_2;
+            console.log(`Hasilnya adalah ${hasil}`);
+        } else if (input_user === "**") {
+            hasil = Math.pow(angka_1, angka_2);  // Untuk operasi pangkat (exponentiation)
+            console.log(`Hasilnya adalah ${hasil}`);
+        }
+
+        console.log("Terima kasih");
+    </script>
+</body>
+</html>

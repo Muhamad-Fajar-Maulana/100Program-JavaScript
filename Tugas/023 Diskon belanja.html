@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let inputUser = parseFloat(prompt("Masukkan total belanja anda = "));
+        let diskon = inputUser * 25 / 100;
+        let totalHargaDiskon = inputUser - diskon;
+
+        if (inputUser >= 100) {
+            console.log(`Selamat, Anda mendapatkan diskon sebesar 25%`);
+            console.log(`Diskon Anda adalah = ${diskon}`);
+            console.log(`Ini adalah total harga yang harus Anda bayar = ${totalHargaDiskon}`);
+        } else {
+            console.log(`Maaf, karena total belanja Anda adalah = ${inputUser}\nmaka Anda tidak mendapatkan diskon`);
+        }
+
+        console.log("Terima kasih");
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nilai_rupiah = parseInt(prompt("Silahkan masukkan nilai rupiah ="));
+
+        const RP_5 = 1000;
+        const RP_4 = 500;
+        const RP_3 = 100;
+        const RP_2 = 50;
+        const RP_1 = 25;
+        const RP_6 = 1;
+
+        let input_5 = Math.floor(nilai_rupiah / RP_5);
+        nilai_rupiah = nilai_rupiah % RP_5;
+
+        let input_4 = Math.floor(nilai_rupiah / RP_4);
+        nilai_rupiah = nilai_rupiah % RP_4;
+
+        let input_3 = Math.floor(nilai_rupiah / RP_3);
+        nilai_rupiah = nilai_rupiah % RP_3;
+
+        let input_2 = Math.floor(nilai_rupiah / RP_2);
+        nilai_rupiah = nilai_rupiah % RP_2;
+
+        let input_1 = Math.floor(nilai_rupiah / RP_1);
+        nilai_rupiah = nilai_rupiah % RP_1;
+
+        let input_6 = Math.floor(nilai_rupiah / RP_6);
+        nilai_rupiah = nilai_rupiah % RP_6;
+
+        console.log(`Nilai rupiah yang anda masukkan setara dengan:`);
+        console.log(`${input_5} kali uang 1000 rupiah`);
+        console.log(`${input_4} kali uang 500 rupiah`);
+        console.log(`${input_3} kali uang 100 rupiah`);
+        console.log(`${input_2} kali uang 50 rupiah`);
+        console.log(`${input_1} kali uang 25 rupiah`);
+        console.log(`${input_6} kali uang 1 rupiah`);
+    </script>
+</body>
+</html>
